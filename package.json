@@ -1,0 +1,28 @@
+{
+  "name": "make-a-martini",
+  "version": "1.0.0",
+  "description": "Cocktail memory game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.generalassemb.ly:davidclelland/make-a-martini.git"
+  },
+  "keywords": [
+    "game",
+    "wdi",
+    "project",
+    "1"
+  ],
+  "author": "David Clelland <davidclelland6@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0"
+  }
+}
