@@ -47,6 +47,24 @@ full clickable game with at least 1 level.
 Include the full list of features that you are considering for POST MVP
 
 ## Game Components
+1 User 'logs in'
+2 User is give the opportunity for a 'test' round to demo the game
+3 user is sent to the game board with cards set out
+4 cards are shuffled and placed ontop of each other
+5 player clicks on a card to flip card 
+6 player has 5 seconds to memorize the keys and ingredients on the card
+7 when the timer runs out the user is switched to the 'pantry' screen
+8 user has 10 seconds to click on the ingredients from the card
+9 depending on the time the user took to select the ingredients a tip is deposited in their tip jar
+10 user is switched back to the game board
+ return to position 5 ===> until cards run out
+11  === $25            master mixologist
+    < $25 && >= $15    mixologist
+    < $15 && >= $5     dive bartender
+    < $5               Don't give up your day job!
+
+
+
 
 ### Landing Page
 
