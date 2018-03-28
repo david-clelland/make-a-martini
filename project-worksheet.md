@@ -4,7 +4,7 @@
 
 This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
 
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
+
 
 |  Day | Deliverable | Approval From Squad Lead
 |---|---| ---|
@@ -36,15 +36,17 @@ Styling CSS animations
 Building out 'levels'
 
 
-
 ## MVP 
-
 full clickable game with at least 1 level.
-
+JQuery DOM manipulation
+CSS transitions
 
 ## POST MVP
 
-Include the full list of features that you are considering for POST MVP
+5 levels
+Increasing difficulty
+The choice of cocktail recipes or food recipes
+
 
 ## Game Components
 1 User 'logs in'
@@ -62,9 +64,6 @@ Include the full list of features that you are considering for POST MVP
     < $25 && >= $15    mixologist
     < $15 && >= $5     dive bartender
     < $5               Don't give up your day job!
-
-
-
 
 ### Landing Page
 
@@ -97,7 +96,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Component 1 | H | 10hrs| 12hrs | 12hrs |
+| Pseudo Code | H      | 10hrs | 12hrs | 12hrs |
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.

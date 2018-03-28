@@ -1,0 +1,81 @@
+#header{
+  width: 100%;
+  height: 100px;
+  background-color: powderblue;
+}
+
+/*landing-page styling*/
+#landing-page{
+width: 100%;
+height: 800px;
+background-image: url("https://res.cloudinary.com/davidclelland/image/upload/v1522241421/SH_CocktailCookbook_15.png");
+background-repeat: no-repeat;
+}
+
+/*game-board styling*/
+#game-board{
+width: 100%;
+height: 900px;
+border: 1px solid black;
+background-color: pink;
+}
+
+/*pantry-board styling*/
+#pantry-board{
+width: 100%;
+height: 900px;
+border: 1px solid black;
+background-color: yellow;
+}
+
+/*input form*/
+#form{
+  text-align: center;
+}
+
+ /*form text/header*/
+#form h4{
+  color: powderblue;
+}
+
+/*landing page form button*/
+#form button{
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: powderblue;
+  color: white;
+  font-family: quicksand;
+  outline: none;
+  border:none ;
+  padding: 8px;
+  font-size: 15px;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding-left: 20px;
+}
+
+h2{
+  font-family: quicksand;
+  color: powderblue;
+  text-align: center;
+}
+
+nav{
+  font-family: quicksand;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  font-weight: bolder;
+}
+
+li{
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+}
+
+
