@@ -39,9 +39,9 @@ The game can be deployed locally by opening the index.html file in a browser.
 
 ## Built With
 
-* [](https://www.sublimetext.com/) - Text editor used.
-* [](https://cloudinary.com/) - Image hosting site for site images.
-* [](https://jquery.com/) - Used for JS scripting.
+* [(https://www.sublimetext.com/)] - Text editor used.
+* [(https://cloudinary.com/)] - Image hosting site for site images.
+* [(https://jquery.com/)] - Used for JS scripting.
 
 ## Authors
 
