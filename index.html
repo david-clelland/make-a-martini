@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Make a Martini</title>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
   <script src="script.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -24,27 +26,64 @@
 
 </header>
   <h2>Welcome to Make a Martini</h2>
-  <div id="form">
-    <h4 id="name">Please enter your name</h4>
-    <input type="text">
+  <form id="player">
+    <input placeholder="Please enter you name" id="name-input" type="text" name="first-name">
     <br>
-    <button>Let's getting shaking</button>
-  </div>
+    <br>
+    <input id="submit-button" type="submit" value="Let's get shaking">
+  </form>
 </div>
 
 <!-- Game Board -->
 <div id="game-board">
   <div id="timer">TIMER</div>
-  <p></p>
+  <h1 id="welcome-message"></h1>
 
-  <div id="backcard"></div>
-
+<!-- card -->
+  <div id="card">
+    <div class="front">
+    </div>
+    <div class="back">
+      <div id="pantry-box"></div>
+      <div id="pantry-box"></div>
+      <div id="pantry-box"></div>
+      <div id="pantry-box"></div>
+      <div id="pantry-box"></div>
+      <div id="pantry-box"></div>
+    </div>
+  </div>
 </div>
 
 <!-- Pantry Board -->
 <div id="pantry-board">
-  <div id="timer">TIMER</div>
-
+<div id="timerTwo">TIMER</div>
+<div id="pantry">
+  <div id="pantry-box">1</div>
+  <div id="pantry-box">2</div>
+  <div id="pantry-box">3</div>
+  <div id="pantry-box">4</div>
+  <div id="pantry-box">5</div>
+  <div id="pantry-box">6</div>
+  <div id="pantry-box">7</div>
+  <div id="pantry-box">8</div>
+  <div id="pantry-box">9</div>
+  <div id="pantry-box">10</div>
+  <div id="pantry-box">11</div>
+  <div id="pantry-box">12</div>
+  <div id="pantry-box">13</div>
+  <div id="pantry-box">14</div>
+  <div id="pantry-box">15</div>
+  <div id="pantry-box">16</div>
+  <div id="pantry-box">17</div>
+  <div id="pantry-box">18</div>
+  <div id="pantry-box">19</div>
+  <div id="pantry-box">20</div>
+  <div id="pantry-box">21</div>
+  <div id="pantry-box">22</div>
+  <div id="pantry-box">23</div>
+  <div id="pantry-box">24</div>
+  <div id="pantry-box">25</div>
+</div>
 </div>
 
 </body>

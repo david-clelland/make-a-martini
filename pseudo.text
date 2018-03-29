@@ -1,0 +1,9 @@
+// Pseudo Code
+// Game Board/Recipe Card
+// click event to turn card & start timer --- timer
+// timer starts - 5 seconds
+// when the 5 seconds is over screen switches to pantry board
+// timer starts at 10 seconds and counts down
+// if user clicks on the correct divs then user wins - push clicked elements to an array
+// loop through the array?
+// if array includes div1 && div2 && div3 correct!
