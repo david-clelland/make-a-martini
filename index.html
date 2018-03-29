@@ -3,24 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Make a Martini</title>
-  <script></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="script.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<!-- header -->
-<header id="header">
+
+<body>
+  <!-- Landing Page -->
+<div id="landing-page">
+  <header id="header">
+
   <!-- nav bar -->
-  <nav>
-  <ul>
-    <li><a href="#">Home<a></li>
-    <li><a href="">About Us<a></li>
-    <li><a href="">More Games<a></li>
-  </ul>
-</nav>
+    <nav>
+    <ul>
+      <li><a href="#">Home<a></li>
+      <li><a href="">About Us<a></li>
+      <li><a href="">More Games<a></li>
+    </ul>
+   </nav>
 
 </header>
-<!-- nav bar -->
-<body>
-<div id="landing-page">
   <h2>Welcome to Make a Martini</h2>
   <div id="form">
     <h4 id="name">Please enter your name</h4>
@@ -29,10 +31,19 @@
     <button>Let's getting shaking</button>
   </div>
 </div>
+
+<!-- Game Board -->
 <div id="game-board">
+  <div id="timer">TIMER</div>
+  <p></p>
+
+  <div id="backcard"></div>
 
 </div>
+
+<!-- Pantry Board -->
 <div id="pantry-board">
+  <div id="timer">TIMER</div>
 
 </div>
 
