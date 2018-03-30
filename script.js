@@ -15,7 +15,8 @@ $(document).ready(function() {
   const playerName = $('#name-input');
   const player = $('#player');
   const $answer = [];
-  const $pantryBox = $('div #pantry-box');
+  const $pantryBox = $('.pantry-box');
+  const $cardAnswer = [1, 2, 3];
 // ======================================================
 // resuable functions
 // tried storing some reusable functions but kept breaking my code
@@ -34,7 +35,7 @@ $(document).ready(function() {
     });
       $gameBoard.fadeIn('slow/1000/slow', function() {
     });
-      $welcomeMessage.append(`Hello ${playerName.val()} you will have 5 seconds to remember the ingredients click the card when you're ready`);
+      $welcomeMessage.append(`Hello ${playerName.val()} you will have 5 seconds to remember the ingredients, click the cocktail when you're ready!`);
   });
 // =======================================================
 // click event (toggle) on CardFront to change the image to cardBack and trigger countdown
@@ -61,7 +62,7 @@ $("#card").click(function(){
 // ======================================================
 // timer for pantryBoard
 // ======================================================
-          let counter = 5;
+          let counter = 10;
           let interval = setInterval(function() {
           counter--;
           $timerTwo.html(counter);
@@ -75,6 +76,7 @@ $("#card").click(function(){
 // =======================================================
           $pantryBox.click(function(){
           $answer.push($pantryBox)
+          $pantryBox.html()
           console.log($answer)
           });
       });
@@ -83,6 +85,14 @@ $("#card").click(function(){
 }, 1000);
 });
 // =======================================================
+// Game Logic
+// =======================================================
+// if ($answer === $cardAnswer){
+//   console.log("correct!");
+// }else{
+//   console.log("You were wrong");
+// }
+console.log($cardAnswer)
 
 
 });

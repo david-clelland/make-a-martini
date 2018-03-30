@@ -1,3 +1,9 @@
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
 #header{
   width: 100%;
   height: 100px;
@@ -7,7 +13,7 @@
 /*landing-page styling*/
 #landing-page{
 width: auto;
-height: 1000px;
+height: 925px;
 background-image: url("https://res.cloudinary.com/davidclelland/image/upload/v1522241421/SH_CocktailCookbook_15.png");
 background-repeat: no-repeat;
 background-size: auto;
@@ -16,14 +22,14 @@ background-size: auto;
 /*game-board styling*/
 #game-board{
 width: auto;
-height: 1000px;
+height: 925px;
 background-color: powderblue;
 }
 
 /*pantry-board styling*/
 #pantry-board{
 width: auto;
-height: 1000px;
+height: 925px;
 background-color: #f0f8ff;
 }
 
@@ -41,6 +47,12 @@ background-color: #f0f8ff;
 #form input {
   outline: none;
 }
+
+/*#side {
+  height: 100%;
+  width: 100px;
+  border: 1px solid black;
+}*/
 
 
 nav a {
@@ -69,54 +81,30 @@ li{
   display: inline-block;
 }
 
-/*#backcard{
-  width: 400px;
-  height: 300px;
-  border: 1px solid black;
-  position: relative;
-  left: 650px;
-  top: 300px;
-  background-image: url('https://res.cloudinary.com/davidclelland/image/upload/v1522271904/negroni_dribbble_1x.png');
-  background-repeat: no-repeat;
-
-}*/
-
-/*#cardFront{
-  width: 150px;
-  height: 300px;
-  border: 1px solid black;
-  position: relative;
-  left: 700px;
-  top: 300px;
-  background: pink;
-}*/
-
 #timer {
-  width: 100px;
+  width: 300px;
   height: 60px;
-  border:1px solid black;
   position: relative;
-  left: 750px;
+  left: 640px;
   top: 20px;
-  background-color:white ;
   font-family: quicksand;
   text-align: center;
-  padding-top: 50px;
-  font-size: 30px;
+  /*padding-top: 50px;*/
+  font-size: 50px;
+  color: white;
 }
 
 #timerTwo {
-  width: 100px;
+  width: 300px;
   height: 60px;
-  border:1px solid black;
-  position: absolute;
-  left: 750px;
+  position: relative;
+  left: 650px;
   top: 20px;
-  background-color:white ;
   font-family: quicksand;
   text-align: center;
-  padding-top: 50px;
-  font-size: 30px;
+  /*padding-top: 50px;*/
+  font-size: 50px;
+  color: powderblue;
 }
 
 #welcome-message{
@@ -135,7 +123,6 @@ li{
 }
 
 #submit-button{
-  margin-top: 20px;
   border-radius: 10px;
   background-color: powderblue;
   color: white;
@@ -151,57 +138,143 @@ li{
   outline: none;
   border:1px solid powderblue;
   font-size: 15px;
+  padding: 5px;
 }
 
 #card{
-/*margin: 10px;
-border: 2px solid black;*/
 position: relative;
-top: 200px;
+top: 150px;
 
 }
 
 .front{
   padding: 10px;
-  border: 2px solid black;
-  height: 400px;
-  width: 300px;
+  height: 600px;
+  width: 400px;
   position: relative;
+  top: -50px;
   left: 650px;
-  background-image: url('https://res.cloudinary.com/davidclelland/image/upload/v1522342229/eb488515b077bc7108173694350848ae.png');
+  background-image: url('../images/cocktail.png');
+  /*background-size: 420px 320px;*/
+  background-repeat: no-repeat;
 }
 
 .back{
   padding: 10px;
-  border: 2px solid black;
-  height: 400px;
-  width: 300px;
   position: relative;
-  left: 650px;
+  top: -50px;
+  left: 400px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr ;
   height: 400px;
-  width: 300px;
+  width: 800px;
 
 }
 
 #pantry  {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
-  height: 450px;
-  width: 800px;
-  position: absolute;
-  left: 400px;
-  top: 200px;
-  border: 1px dotted black;
+  grid-template-rows: 1fr 1fr 1fr ;
+  height: 800px;
+  width: 1000px;
+  position: relative;
+  left: 300px;
+  top: 50px;
+  /*border: 1px dotted black;*/
+
  }
 
- #pantry-box{
-  border: 1px dotted black;
+ #pantry-box-one{
+  background-image: url('../images/vodka.png');
+  background-size: 200px 180px;
+  background-repeat: no-repeat;
+
  }
 
+ #pantry-box-two{
+  background: url('../images/sugar.png');
+  background-size: 200px 180px;
+  background-repeat: no-repeat;
+ }
+
+ #pantry-box-three{
+  background: url('../images/ice.png');
+  background-size: 200px 180px;
+  background-repeat: no-repeat;
+ }
+
+ #pantry-box-four{
+  background: url('../images/gin.png');
+  background-size: 200px 180px;
+  background-repeat: no-repeat;
+ }
+
+#pantry-box-five{
+  background: url('../images/lemon.png');
+  background-size: 200px 180px;
+  background-repeat: no-repeat;
+ }
+
+ #pantry-box-six{
+  background: url('../images/lime.png');
+  background-size: 200px 180px;
+  background-repeat: no-repeat;
+ }
+
+ #pantry-box-seven{
+  background: url('../images/mango.png');
+  background-size: 200px 180px;
+  background-repeat: no-repeat;
+ }
+
+#pantry-box-eight{
+  background: url('../images/mint.png');
+  background-size: 200px 180px;
+  background-repeat: no-repeat;
+ }
+
+ #pantry-box-nine{
+  background: url('../images/orange.png');
+  background-size: 200px 180px;
+  background-repeat: no-repeat;
+ }
+
+ #pantry-box-ten{
+  background: url('../images/mint.png');
+  background-size: 200px 180px;
+  background-repeat: no-repeat;
+ }
+
+ #pantry-box-eleven{
+  background: url('../images/rosemary.png');
+  background-size: 200px 180px;
+  background-repeat: no-repeat;
+ }
+
+ #pantry-box-twelve{
+  background: url('../images/tequila.png');
+  background-size: 200px 180px;
+  background-repeat: no-repeat;
+ }
+
+ #pantry-box-thirteen{
+  background: url('../images/strawberry.png');
+  background-size: 200px 180px;
+  background-repeat: no-repeat;
+ }
+
+ #pantry-box-fourteen{
+  background: url('../images/basil.png');
+  background-size: 200px 180px;
+  background-repeat: no-repeat;
+ }
+
+ #pantry-box-fifteen{
+  background: url('../images/chilli.png');
+  background-size: 200px 180px;
+  background-repeat: no-repeat;
+ }
 
 
 
