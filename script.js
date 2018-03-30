@@ -14,10 +14,9 @@ $(document).ready(function() {
   const $welcomeMessage = $('#welcome-message');
   const playerName = $('#name-input');
   const player = $('#player');
-  const $answer = [ ];
-  const $pantryBox = $('#pantry-box');
-// =====================================================
-
+  const $answer = [];
+  const $pantryBox = $('div #pantry-box');
+// ======================================================
 // resuable functions
 // tried storing some reusable functions but kept breaking my code
 // =======================================================
@@ -59,14 +58,6 @@ $("#card").click(function(){
       $gameBoard.fadeOut('slow/1000/slow', function() {
       });
       $pantryBoard.fadeIn('slow/1000/slow', function() {
-// =======================================================
-// Click event on pantry boxes, not working
-// =======================================================
-      $pantryBox.on('click', function(e){
-          e.preventDefault();
-          $answer.push('hello');
-          });
-          console.log($answer)
 // ======================================================
 // timer for pantryBoard
 // ======================================================
@@ -79,6 +70,13 @@ $("#card").click(function(){
           clearInterval(interval);
     }
 }, 1000);
+// =======================================================
+// Click event on pantry boxes
+// =======================================================
+          $pantryBox.click(function(){
+          $answer.push($pantryBox)
+          console.log($answer)
+          });
       });
 // =======================================================
     }
