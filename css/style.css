@@ -288,9 +288,22 @@ top: 150px;
   background-repeat: no-repeat;
  }
 
+ #correct{
+  font-family: quicksand;
+  font-size: 100px;
+  font-weight: bold;
+  color: green;
+  position: relative;
+  left: 562px;
+  bottom: 720px;
+ }
 
-
-
-
-
-
+ #wrong{
+  font-family: quicksand;
+  font-size: 100px;
+  font-weight: bold;
+  color: red;
+  position: relative;
+  left: 548px;
+  bottom: 716px;
+ }
