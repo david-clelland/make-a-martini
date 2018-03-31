@@ -32,6 +32,7 @@ $(document).ready(function() {
   const $pantryFifteen = $('#pantry-box-fifteen ');
   const $answer = [];
   const $cardAnswer = [];
+  const $shaker = "<img src= images/shaker.png>";
 
 // ======================================================
 // resuable functions
@@ -39,6 +40,7 @@ $(document).ready(function() {
   function pantryClick(box){
        box.on('click', function() {
        $answer.push(box)
+       box.prepend($shaker);
        console.log($answer);
        box.off();
     });
@@ -58,8 +60,8 @@ function isEqual(value, other){
 // =======================================================
 // Hidden pages and elements
 // =======================================================
-  // $gameBoard.hide();
-  // $pantryBoard.hide();
+  $gameBoard.hide();
+  $pantryBoard.hide();
   $cardBack.hide();
 
 // =======================================================
@@ -71,7 +73,7 @@ function isEqual(value, other){
     });
       $gameBoard.fadeIn('slow/1000/slow', function() {
     });
-      $welcomeMessage.append(`Hello ${playerName.val()} you will have 5 seconds to remember the ingredients, click the cocktail when you're ready!`);
+      $welcomeMessage.append(`Hello ${playerName.val()}, click the cocktail when you're ready!`);
   });
 
 // =======================================================
@@ -81,11 +83,12 @@ $card.on('click', function(){
   $cardFront.toggle();
   $cardBack.toggle();
   $card.off();
+  $welcomeMessage.text(`Remember the ingredients!`);
 
 // =======================================================
 // timer for gameBoard
 // =======================================================
-  let counter = 2;
+  let counter = 5;
   let interval = setInterval(function() {
     counter--;
     $timer.html(counter);
@@ -103,7 +106,7 @@ $card.on('click', function(){
 // ======================================================
 // timer for pantryBoard
 // ======================================================
-          let counter = 2;
+          let counter = 10;
           let interval = setInterval(function() {
           counter--;
           $timerTwo.html(counter);
@@ -141,8 +144,5 @@ $card.on('click', function(){
 }, 1000);
 });
 
-// =======================================================
-// Game Logic
-// =======================================================
 
 });
