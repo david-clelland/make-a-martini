@@ -31,15 +31,15 @@ $(document).ready(function() {
   const $pantryFourteen = $('#pantry-box-fourteen ');
   const $pantryFifteen = $('#pantry-box-fifteen ');
   const $answer = [];
-  const $cardAnswer = [];
+  const $cardAnswer = ["vodka", "sugar"];
   const $shaker = "<img src= images/shaker.png>";
 
 // ======================================================
 // resuable functions
 // ======================================================
   function pantryClick(box){
-       box.on('click', function() {
-       $answer.push(box)
+       box.on('click', function(e) {
+       $answer.push($(this).data('ingredient'))
        box.prepend($shaker);
        console.log($answer);
        box.off();
@@ -49,9 +49,9 @@ $(document).ready(function() {
 function isEqual(value, other){
   for(let i=0; i< $cardAnswer.length; i++ ){
     if($answer[i] === $cardAnswer[i]){
-    console.log('correct');
+    console.log("CORRECT!");
   }else if($answer[i] !== $cardAnswer[i]){
-    console.log('you were wrong');
+    console.log("YOU WERE WRONG!");
   }
   }
 };
@@ -74,7 +74,7 @@ function isEqual(value, other){
       $gameBoard.fadeIn('slow/1000/slow', function() {
     });
       $welcomeMessage.append(`Hello ${playerName.val()}, click the cocktail when you're ready!`);
-  });
+    });
 
 // =======================================================
 // click event (toggle) on CardFront to change the image to cardBack and trigger countdown
@@ -82,6 +82,7 @@ function isEqual(value, other){
 $card.on('click', function(){
   $cardFront.toggle();
   $cardBack.toggle();
+  // $cardAnswer.push($(this).data('ingredient'))
   $card.off();
   $welcomeMessage.text(`Remember the ingredients!`);
 
