@@ -185,6 +185,18 @@ top: 150px;
 
  }
 
+#try-again{
+  background-color: pink;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  left: 750px;
+  outline: none;
+  font-family: quicksand;
+  color: white;
+  font-size: 15px;
+}
+
  #pantry-box-one{
   background-image: url('../images/vodka.png');
   background-size: 200px 180px;
@@ -275,6 +287,8 @@ top: 150px;
   background-size: 200px 180px;
   background-repeat: no-repeat;
  }
+
+
 
 
 

@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+// ======================================================
 // declaring JQuery variables
 // ======================================================
   const $card = $('#card')
@@ -31,8 +32,9 @@ $(document).ready(function() {
   const $pantryFourteen = $('#pantry-box-fourteen ');
   const $pantryFifteen = $('#pantry-box-fifteen ');
   const $answer = [];
-  const $cardAnswer = ["vodka", "sugar"];
+  const $cardAnswer = [];
   const $shaker = "<img src= images/shaker.png>";
+  const $reload = $('#try-again');
 
 // ======================================================
 // resuable functions
@@ -41,21 +43,26 @@ $(document).ready(function() {
        box.on('click', function(e) {
        $answer.push($(this).data('ingredient'))
        box.prepend($shaker);
-       console.log($answer);
        box.off();
     });
 }
 
-function isEqual(value, other){
+function isEqual(userAnswer, cardAnswer){
+  // let userAnswer = userAnswer.sort();
+  // let cardAnswer = cardAnswer.sort();
   for(let i=0; i< $cardAnswer.length; i++ ){
-    if($answer[i] === $cardAnswer[i]){
+    console.log($cardAnswer[i])
+  }
+  for(let i=0; i < $answer.length; i++){
+    console.log($answer[i])
+  }
+  if(userAnswer.toString() === cardAnswer.toString()){
     console.log("CORRECT!");
-  }else if($answer[i] !== $cardAnswer[i]){
-    console.log("YOU WERE WRONG!");
+  }else if(userAnswer.toString() !== cardAnswer.toString()){
+    console.log("WRONG!");
   }
-  }
-};
 
+};
 
 // =======================================================
 // Hidden pages and elements
@@ -82,9 +89,11 @@ function isEqual(value, other){
 $card.on('click', function(){
   $cardFront.toggle();
   $cardBack.toggle();
-  // $cardAnswer.push($(this).data('ingredient'))
+  // push random selection of ingredients to $cardAnswer and $cardBack
+  $cardAnswer.push('vodka', 'sugar', 'lemon', 'mint', 'tequila')
   $card.off();
   $welcomeMessage.text(`Remember the ingredients!`);
+  console.log($cardAnswer);
 
 // =======================================================
 // timer for gameBoard
@@ -144,6 +153,16 @@ $card.on('click', function(){
     }
 }, 1000);
 });
+
+$reload.on('click',function(event) {
+  event.preventDefault();
+$pantryBoard.fadeOut('slow/1000/slow', function() {
+      });
+$gameBoard.fadeIn('slow/1000/slow', function() {
+      });
+});
+
+
 
 
 });
