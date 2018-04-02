@@ -95,7 +95,7 @@ function isEqual(userAnswer, cardAnswer){
   $cardBack.toggle();
   $card.off()
   // loop through pantryArray 6 times
-  for(let i=0; i<6; i++){
+  for(let i=0; i<4; i++){
   // push random index to cardAnswer
   $cardAnswer.push($pantryArray[Math.floor(Math.random()*$pantryArray.length)]);
   }
