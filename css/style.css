@@ -81,6 +81,7 @@ li{
   display: inline-block;
 }
 
+/*gameBoard timer*/
 #timer {
   width: 300px;
   height: 60px;
@@ -94,6 +95,7 @@ li{
   color: white;
 }
 
+/*pantryBoard timer*/
 #timerTwo {
   width: 300px;
   height: 60px;
@@ -107,6 +109,7 @@ li{
   color: powderblue;
 }
 
+/*welcome message gameBoard*/
 #welcome-message{
   font-family: quicksand;
   text-align: center;
@@ -115,6 +118,7 @@ li{
   top: 100px;
   font-size: 30px;
 }
+
 
 #player{
   font-family: quicksand;

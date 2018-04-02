@@ -31,6 +31,7 @@ $(document).ready(function() {
   const $pantryThirteen = $('#pantry-box-thirteen ');
   const $pantryFourteen = $('#pantry-box-fourteen ');
   const $pantryFifteen = $('#pantry-box-fifteen ');
+  const $pantryArray = ['vodka', 'sugar', "ice", 'gin', 'lemon', 'lime', 'mango', 'mint', 'orange', 'cointreau', 'rosemary', 'tequila', 'strawberry', 'basil', 'chilli' ];
   const $answer = [];
   const $cardAnswer = [];
   const $shaker = '<img src= images/shaker.png>';
@@ -45,13 +46,13 @@ $(document).ready(function() {
     box.on('click', function(e) {
        $answer.push($(this).data('ingredient'))
        box.prepend($shaker);
-       box.off();
+       // box.off();
        $answer.sort();
+       console.log($answer);
     });
 }
 
 function isEqual(userAnswer, cardAnswer){
-
   for(let i=0; i< $cardAnswer.length; i++ ){
   }
   for(let i=0; i < $answer.length; i++){
@@ -61,8 +62,9 @@ function isEqual(userAnswer, cardAnswer){
   }else if(userAnswer.toString() !== cardAnswer.toString()){
     $wrong.show();
   }
-
 };
+
+
 
   // =======================================================
   // Hidden pages and elements
@@ -88,15 +90,85 @@ function isEqual(userAnswer, cardAnswer){
   // =======================================================
   // click event (toggle) on CardFront to change the image to cardBack and trigger countdown
   // =======================================================
-$card.on('click', function(){
+  $card.on('click', function(){
   $cardFront.toggle();
   $cardBack.toggle();
-  // push random selection of ingredients to $cardAnswer and $cardBack
-  $cardAnswer.push('vodka', 'sugar', 'lemon', 'mint', 'tequila', 'lime')
-  $card.off();
+  $card.off()
+  // loop through pantryArray 6 times
+  for(let i=0; i<6; i++){
+  // push random index to cardAnswer
+  $cardAnswer.push($pantryArray[Math.floor(Math.random()*$pantryArray.length)]);
+  }
   $welcomeMessage.text(`Remember the ingredients!`);
   $cardAnswer.sort();
   console.log($cardAnswer);
+
+  // =======================================================
+  // appending images to cardBack
+  // =======================================================
+  $cardAnswer.forEach((item, i) => {
+    if(item === 'vodka'){
+      let div = $('<div></div>')
+      $(div).attr('id', 'pantry-box-one')
+      $cardBack.append(div);
+  }else if(item === 'sugar'){
+      let div = $('<div></div>')
+      $(div).attr('id', 'pantry-box-two')
+      $cardBack.append(div);
+  }else if(item === 'ice'){
+    let div = $('<div></div>')
+      $(div).attr('id', 'pantry-box-three')
+      $cardBack.append(div);
+  }else if(item === 'gin'){
+    let div = $('<div></div>')
+      $(div).attr('id', 'pantry-box-four')
+      $cardBack.append(div);
+  }else if(item === 'lemon'){
+    let div = $('<div></div>')
+      $(div).attr('id', 'pantry-box-five')
+      $cardBack.append(div);
+  }else if(item === 'lime'){
+    let div = $('<div></div>')
+      $(div).attr('id', 'pantry-box-six')
+      $cardBack.append(div);
+  }else if(item === 'mango'){
+    let div = $('<div></div>')
+      $(div).attr('id', 'pantry-box-seven')
+      $cardBack.append(div);
+  }else if(item === 'mint'){
+    let div = $('<div></div>')
+      $(div).attr('id', 'pantry-box-eight')
+      $cardBack.append(div);
+  }else if(item === 'orange'){
+    let div = $('<div></div>')
+      $(div).attr('id', 'pantry-box-nine')
+      $cardBack.append(div);
+  }else if(item === 'cointreau'){
+    let div = $('<div></div>')
+      $(div).attr('id', 'pantry-box-ten')
+      $cardBack.append(div);
+  }else if(item === 'rosemary'){
+    let div = $('<div></div>')
+      $(div).attr('id', 'pantry-box-eleven')
+      $cardBack.append(div);
+  }else if(item === 'tequila'){
+    let div = $('<div></div>')
+      $(div).attr('id', 'pantry-box-twelve')
+      $cardBack.append(div);
+  }else if(item === 'strawberry'){
+    let div = $('<div></div>')
+      $(div).attr('id', 'pantry-box-thirteen')
+      $cardBack.append(div);
+  }else if(item === 'basil'){
+    let div = $('<div></div>')
+      $(div).attr('id', 'pantry-box-fourteen')
+      $cardBack.append(div);
+  }else if(item === 'chilli'){
+    let div = $('<div></div>')
+      $(div).attr('id', 'pantry-box-fifteen')
+      $cardBack.append(div);
+  }
+  })
 
   // =======================================================
   // timer for gameBoard
