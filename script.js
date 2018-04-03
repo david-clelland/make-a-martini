@@ -65,7 +65,6 @@ function isEqual(userAnswer, cardAnswer){
 };
 
 
-
   // =======================================================
   // Hidden pages and elements
   // =======================================================
@@ -101,7 +100,6 @@ function isEqual(userAnswer, cardAnswer){
   }
   $welcomeMessage.text(`Remember the ingredients!`);
   $cardAnswer.sort();
-  console.log($cardAnswer);
 
   // =======================================================
   // appending images to cardBack
@@ -227,6 +225,11 @@ function isEqual(userAnswer, cardAnswer){
 // =======================================================
     }
 }, 1000);
+});
+$reload.on('click', function(event) {
+  event.preventDefault();
+  location.reload();
+  /* Act on the event */
 });
 
 });
