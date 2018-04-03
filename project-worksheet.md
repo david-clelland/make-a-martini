@@ -11,17 +11,11 @@ This schedule will be used to keep track of your progress throughout the week an
 |---|---| ---|
 
 |Day 1: Tue| Game Idea|
-
 |Day 2: Wed| Wireframes and Priority Matrix| 
-
 |Day 3: Thu| Pseudocode\actual code|   
-
 |Day 4: Fri| Basic Clickable Model |  
-
 |Day 5: Sat| Working Prototype |    
-
 |Day 6: Sun| Game Completed / Slides |
-
 |Day 7: Mon| Project Presentations |
 
 ## Project Description
@@ -106,12 +100,19 @@ isEqual() - function created to compare two arrays after converting to strings a
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. 
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+
 | --- | :---: |  :---: | :---: | :---: |                 |
+
 | Pseudo Code | H      | 10hrs | 12hrs | 12hrs |         |
+
 | HTML & CSS  | L      | 3hrs  |       |                 | 2hrs
+
 | DOM Manip   | H      | 16hrs |       |                 | 18hrs
+
 | Game Logic  | H      | 16hrs |       |                 |
+
 | Testing     | L      | 1hr   |       |                 |
+
 | debugging   | H      | 2hrs  |       |                 | 4hrs
 
 ## Helper Functions
