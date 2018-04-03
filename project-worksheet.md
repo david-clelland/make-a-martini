@@ -122,7 +122,6 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
  jQuery
 
 ## Code Snippet
