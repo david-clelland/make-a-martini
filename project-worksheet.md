@@ -7,7 +7,9 @@ This schedule will be used to keep track of your progress throughout the week an
 
 
 |  Day | Deliverable | Approval From Squad Lead
+
 |---|---| ---|
+
 |Day 1: Tue| Game Idea|
 |Day 2: Wed| Wireframes and Priority Matrix| 
 |Day 3: Thu| Pseudocode\actual code|   
@@ -30,8 +32,8 @@ Make a Martini (working title) is a learning and memory game challenging the use
 
 Framework HTML/CSS to working/clickable site   
 Game Logic
-  flipcard 
-  assessing correct selections
+flipcard 
+assessing correct selections
 Styling CSS animations
 Building out 'levels'
 
@@ -83,45 +85,72 @@ level 3 = 5 ingredient recipes
 
 ### Winning The Game
 
-There is no winning or losing per say, there is successful and unsuccessful. Players can keep playing to earn more tips and improve their knowledge of cocktails.
+Winning or losing is conditional on the money earned through time taken to select ingredients correctly. Players can keep playing to earn more tips and improve their knowledge of cocktails.
 
 ### Game Reset
-The user can reset at anytime, leave the gake and return to continie levels and earn more money.
+The user can reset at anytime, leave the game and return to continue levels and earn more money.
 
 ## Functional Components
 
-Based on the initial logic defined in the previous game phases section try and breakdown the logic further into functional components, and by that we mean functions.  Does your logic indicate that code could be encapsulated for the purpose of reusablility.  Once a function has been defined it can then be incorporated into a class as a method. 
+pantryClick() - function used to initiate 'pushing' the data to an array in order to compare to the question array and prepending an image to show the user it has been clicked. 
+
+isEqual() - function created to compare two arrays after converting to strings and show relevant win lose logic
+
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. 
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Pseudo Code | H      | 10hrs | 12hrs | 12hrs |
+
+| --- | :---: |  :---: | :---: | :---: |                 |
+
+| Pseudo Code | H      | 10hrs | 12hrs | 12hrs |         |
+
+| HTML & CSS  | L      | 3hrs  |       |                 | 2hrs
+
+| DOM Manip   | H      | 16hrs |       |                 | 18hrs
+
+| Game Logic  | H      | 16hrs |       |                 |
+
+| Testing     | L      | 1hr   |       |                 |
+
+| debugging   | H      | 2hrs  |       |                 | 4hrs
 
 ## Helper Functions
-Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
 
 | Function | Description | 
 | --- | :---: |  
-| Capitalize | This will capitalize the first letter in a string | 
+
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
  jQuery
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  
+function pantryClick(box) {
+    box.on('click', function(e) {
+       $answer.push($(this).data('ingredient'))
+       box.prepend($shaker);
+       // box.off();
+       $answer.sort();
+       console.log($answer);
+    });
+    
+ Sorting and pushing data from the ingredients was challenging, .sort() was utilized to correctly compare 2 arrays.
 
 ## jQuery Discoveries
- Use this section to list some, but not all, of the jQuery methods and\or functionality discovered while working on this project.
+.sort()
+.fadeIn()
+.fadeOut()
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+Multiple ingredients able to display: Could not overcome duplicate strings being stored into the cardAnswer array when
+randomly selected, to accompany this I enabled multiple clicks on the answer board.
 
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
+Displaying Data through array indexes, seeked assistance from classmates
+Making sure no duplicate ingredients are shown after Math.random(), not resolved, will have to shuuffle instead of using math.Random() and pick from beginning or end of array and then .pop() or .shift()
 
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+
+#### Play the game here
+https://git.generalassemb.ly/pages/davidclelland/make-a-martini/
+
