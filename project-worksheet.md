@@ -83,10 +83,10 @@ level 3 = 5 ingredient recipes
 
 ### Winning The Game
 
-There is no winning or losing per say, there is successful and unsuccessful. Players can keep playing to earn more tips and improve their knowledge of cocktails.
+Winning or losing is conditional on the money earned through time taken to select ingredients correctly. Players can keep playing to earn more tips and improve their knowledge of cocktails.
 
 ### Game Reset
-The user can reset at anytime, leave the game and return to continie levels and earn more money.
+The user can reset at anytime, leave the game and return to continue levels and earn more money.
 
 ## Functional Components
 
