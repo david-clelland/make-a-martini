@@ -143,5 +143,6 @@ Displaying Data through array indexes, seeked assistance from classmates
 Making sure no duplicate ingredients are shown after Math.random(), not resolved, will have to shuuffle instead of using math.Random() and pick from beginning or end of array and then .pop() or .shift()
 
 
-#### SAMPLE.....
+#### Play the game here
+https://git.generalassemb.ly/pages/davidclelland/make-a-martini/
 
