@@ -7,13 +7,21 @@ This schedule will be used to keep track of your progress throughout the week an
 
 
 |  Day | Deliverable | Approval From Squad Lead
+
 |---|---| ---|
+
 |Day 1: Tue| Game Idea|
+
 |Day 2: Wed| Wireframes and Priority Matrix| 
+
 |Day 3: Thu| Pseudocode\actual code|   
+
 |Day 4: Fri| Basic Clickable Model |  
+
 |Day 5: Sat| Working Prototype |    
+
 |Day 6: Sun| Game Completed / Slides |
+
 |Day 7: Mon| Project Presentations |
 
 ## Project Description
