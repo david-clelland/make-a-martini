@@ -86,22 +86,25 @@ level 3 = 5 ingredient recipes
 There is no winning or losing per say, there is successful and unsuccessful. Players can keep playing to earn more tips and improve their knowledge of cocktails.
 
 ### Game Reset
-The user can reset at anytime, leave the gake and return to continie levels and earn more money.
+The user can reset at anytime, leave the game and return to continie levels and earn more money.
 
 ## Functional Components
 
-Based on the initial logic defined in the previous game phases section try and breakdown the logic further into functional components, and by that we mean functions.  Does your logic indicate that code could be encapsulated for the purpose of reusablility.  Once a function has been defined it can then be incorporated into a class as a method. 
+pantryClick() - function used to initiate 'pushing' the data to an array in order to compare to the question array and prepending an image to show the user it has been clicked. 
+
+isEqual() - function created to compare two arrays after converting to strings and show relevant win lose logic
+
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. 
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Pseudo Code | H      | 10hrs | 12hrs | 12hrs |
-| HTML & CSS  | L      | 3hrs                            | 2hrs
-| DOM Manip   | H      | 16hrs |
-| Game Logic  | H      | 16hrs |
-| Testing     | L      | 1hr
-| debugging   |
+| --- | :---: |  :---: | :---: | :---: |                 |
+| Pseudo Code | H      | 10hrs | 12hrs | 12hrs |         |
+| HTML & CSS  | L      | 3hrs  |       |                 | 2hrs
+| DOM Manip   | H      | 16hrs |       |                 | 18hrs
+| Game Logic  | H      | 16hrs |       |                 |
+| Testing     | L      | 1hr   |       |                 |
+| debugging   | H      | 2hrs  |       |                 | 4hrs
 
 ## Helper Functions
 
@@ -127,13 +130,17 @@ function pantryClick(box) {
  Sorting and pushing data from the ingredients was challenging, .sort() was utilized to correctly compare 2 arrays.
 
 ## jQuery Discoveries
- Use this section to list some, but not all, of the jQuery methods and\or functionality discovered while working on this project.
+.sort()
+.fadeIn()
+.fadeOut()
 
 ## Change Log
 Multiple ingredients able to display: Could not overcome duplicate strings being stored into the cardAnswer array when
 randomly selected, to accompany this I enabled multiple clicks on the answer board.
 
 ## Issues and Resolutions
+Displaying Data through array indexes, seeked assistance from classmates
+Making sure no duplicate ingredients are shown after Math.random(), not resolved, will have to shuuffle instead of using math.Random() and pick from beginning or end of array and then .pop() or .shift()
 
 
 #### SAMPLE.....
